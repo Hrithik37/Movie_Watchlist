@@ -62,11 +62,11 @@ A Flutter-based mobile app allowing users to sign up, log in, and maintain their
 ## 🚩 Getting Started
 
 ###  Step 1: Clone the Repository
-```bash
+bash
 git clone <your-repo-url>
 cd movie_watchlist
 
-###Step 2: Setup Flutter Environment
+### Step 2: Setup Flutter Environment
 Make sure Flutter is installed:
 
 Install Flutter
@@ -79,14 +79,16 @@ Edit
 flutter doctor
 
 
-Step 3: Install Dependencies
+### Step 3: Install Dependencies
 Run the following in the project root directory:
 
 bash
 Copy
 Edit
 flutter pub get
-Step 4: Configure Backend (Back4App)
+
+
+### Step 4: Configure Backend (Back4App)
 Sign up at Back4App
 
 Create a new Parse App
@@ -95,7 +97,7 @@ Create the database structure as mentioned above (_User and Movie classes)
 
 Obtain your Application ID, Client Key, and Server URL from Back4App Dashboard → Settings → App Keys.
 
-Step 5: Configure App to use your Parse Backend
+### Step 5: Configure App to use your Parse Backend
 In lib/main.dart, update:
 
 dart
@@ -109,7 +111,7 @@ await Parse().initialize(
 );
 Replace YOUR_APP_ID, YOUR_PARSE_SERVER_URL, and YOUR_CLIENT_KEY with your actual Back4App keys.
 
-Step 6: Run the App
+### Step 6: Run the App
 Launch emulator or connect a physical device:
 
 bash
